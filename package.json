@@ -1,0 +1,7 @@
+{
+  "name": "site_bunner",
+  "version": "1.0.0",
+  "dependencies": {
+    "swiper": "^10.0.4"
+  }
+}
