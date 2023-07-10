@@ -1,5 +1,4 @@
 /*global style*/
-
 ul {
     list-style: none;
     padding: 0;
@@ -147,7 +146,7 @@ a {
 
 .gallery__text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -171,25 +170,40 @@ a {
     transform: scale(1.5);
 }
 
-
 /*slider*/
-.swiper-button-prev,
-.swiper-button-next {
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
+.swiper-button-next,
+.swiper-button-prev {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
 
+.swiper-button-next,
+.swiper-button-prev {
+    background-color:  #D9D9D9;
+}
 
+.swiper-button-next:hover {
+    background-color: red;
+}
+
+.swiper-button-prev:hover {
+    background-color: red;
+}
+
+.swiper-button-prev:hover path {
+    stroke: #ffffff;
+}
+
+.swiper-button-next:hover path {
+    stroke: #ffffff;
+}
 
 
 
