@@ -14,12 +14,10 @@ a {
 }
 
 .banner {
-    font-family: Inter, sans-serif;
     max-width: 1400px;
     max-height: 600px;
     background: linear-gradient(153deg, rgba(246, 246, 246, 0.00) 0%, #F6F6F6 100%);;
     border-radius: 5px;
-    position: relative;
 }
 
 .banner-content {
@@ -29,10 +27,17 @@ a {
 
 .banner-content__wrapper {
     display: flex;
+    position: relative;
 }
 
+
 .banner-content__photo {
-    max-width: 680px;
+    background-image: url("images/main-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 680px;
+    height: 600px;
 }
 
 .banner-content__sale {
@@ -57,13 +62,13 @@ a {
 }
 
 .banner-content__description {
-    width: 100%;
     padding: 27px 87px;
     box-sizing: border-box;
     background: linear-gradient(153deg, rgba(246, 246, 246, 0.00) 0%, #F6F6F6 100%);
 }
 
 .description__wrapper {
+    position: relative;
     display: flex;
     max-width: 516px;
     border-bottom: 1px solid rgba(39, 39, 39, 0.40);
@@ -102,8 +107,8 @@ a {
     color: red;
 }
 
-.arrow:hover {
-   stroke: red;
+.description__link:hover svg path {
+    stroke: red;
 }
 
 .description__link a {
@@ -140,11 +145,11 @@ a {
 .gallery__properties {
     position: absolute;
     bottom: 33px;
-    max-width: 184px;
-    right: 23px;
+    width: 100%;
 }
 
 .gallery__text {
+    padding: 0 23px;
     color: #ffffff;
     font-size: 1.25rem;
     font-style: normal;
@@ -152,6 +157,7 @@ a {
     line-height: normal;
     margin: 0;
     text-align: left;
+    word-break: break-word;
 }
 
 .gallery__wrap-img {
@@ -162,7 +168,7 @@ a {
 
 .gallery__img {
     max-width: 234px;
-    width: calc(100px + (234 - 100) * ((100vw - 500px) / (1920 - 500)));
+    width:  calc(120px + (234 - 50) * ((100vw - 500px) / (1920 - 300)));
     transition: 1s;
 }
 
@@ -172,11 +178,24 @@ a {
 
 /*slider*/
 
+
+.swiper {
+    width: 100%;
+    height: 624px;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    height: 25px;
+    width: 25px;
+    transform: translate(-1px, -2px);
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     border-radius: 100%;
-    width: 25px;
-    height: 25px;
+    width: 41px;
+    height: 41px;
 }
 
 .swiper-button-next::after,
@@ -184,9 +203,17 @@ a {
     content: "";
 }
 
+.swiper-button-prev {
+    left:  calc(100px + (225 - 50) * ((100vw - 490px) / (1920 - 300)));
+}
+
+.swiper-button-next {
+    right:  calc(100px + (225 - 50) * ((100vw - 490px) / (1920 - 300)));
+}
+
 .swiper-button-next,
 .swiper-button-prev {
-    background-color:  #D9D9D9;
+    background-color: #D9D9D9;
 }
 
 .swiper-button-next:hover {
@@ -204,6 +231,190 @@ a {
 .swiper-button-next:hover path {
     stroke: #ffffff;
 }
+
+@media (max-width: 1400px) {
+    .banner-content__description {
+        padding: 27px 40px;
+    }
+    .description__wrapper {
+        margin-left: 0;
+    }
+    .banner-content__sale {
+        width: 90px;
+        height: 400px;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .gallery__text {
+        font-size: 1.125rem;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .swiper-button-next {
+        right: calc(100px + (41 - 200) * ((100vw - 490px) / (1920 - 300)));;
+    }
+    .swiper-button-prev {
+        left: calc(100px + (41 - 200) * ((100vw - 490px) / (1920 - 300)));;
+    }
+}
+
+@media (max-width: 998px) {
+    .swiper-button-next {
+        right: calc(100px + (41 - 240) * ((100vw - 490px) / (1920 - 300)));;
+    }
+    .swiper-button-prev {
+        left: calc(100px + (41 - 240) * ((100vw - 490px) / (1920 - 300)));;
+    }
+
+    .banner-content__sale {
+        width: 80px;
+        height: 320px;
+    }
+
+    .banner-content__sale-text {
+        font-size: 54px;
+    }
+
+    .gallery__text {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+    @media (max-width: 640px) {
+    .swiper {
+        height: 1136px;
+    }
+    .banner {
+        height: 1136px;
+    }
+
+    .banner-content__gallery {
+        display: none;
+    }
+
+    .description__logo {
+        display: none;
+    }
+
+    .banner-content__photo {
+       background-image: url("images/main-photo-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1136px;
+    }
+
+    .banner-content__sale {
+        position: absolute;
+        background: rgba(255, 0, 0, 0.80);
+        border-radius: inherit;
+        width: 100%;
+        height: 118px;
+        left: 0;
+        top: 568px;
+    }
+
+    .banner-content__sale-text {
+        writing-mode: initial;
+        font-size: 68px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+        margin: 0;
+        transform: translate(28%, 32%);
+    }
+
+    .banner-content__description {
+        display: grid;
+        grid-template-rows: 1fr 105px;
+        position: absolute;
+        bottom: 0;
+        height: 450px;
+        padding: 36px 25px 0;
+    }
+
+    .description__wrapper {
+        margin: 0;
+        border-bottom: none;
+        max-width: 589px;
+    }
+
+    .description__text h2 {
+        color: #000;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .description__text p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #272727;
+    }
+
+    .description__link span {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 1045px;
+    }
+
+    .swiper-button-prev {
+        left: 25px;
+    }
+
+    .swiper-button-next {
+        left: 90px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: #000;
+    }
+
+    .swiper-button-prev svg path,
+    .swiper-button-next svg path {
+        stroke: #ffffff;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .description__link span:hover {
+        color: red;
+    }
+
+    .description__link:hover svg path {
+        stroke: red;
+    }
+
+    .description__link a {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+}
+
 
 
 
