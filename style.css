@@ -46,6 +46,7 @@ a {
     width: 118px;
     height: 474px;
     left: 90px;
+    display: flex;
 }
 
 .banner-content__sale-text {
@@ -57,13 +58,14 @@ a {
     font-weight: 700;
     line-height: 70px;
     text-transform: uppercase;
-    margin: 41px auto;
+    margin: 41px auto 0;
+    text-align: start;
 }
 
 .banner-content__description {
     padding: 0 87px 0 117px;
     box-sizing: border-box;
-    background: linear-gradient(153deg, rgba(246, 246, 246, 0.00) 0%, #F6F6F6 100%);
+    background: rgba(255, 255, 255, 0.70)
 }
 
 .description__wrapper {
@@ -314,9 +316,11 @@ a {
     .description__wrapper {
         height: 285px;
     }
+
     .swiper-button-next {
         right: calc(100px + (41 - 240) * ((100vw - 100px) / (1920 - 300)));
     }
+
     .swiper-button-prev {
         left: calc(100px + (41 - 240) * ((100vw - 100px) / (1920 - 300)));
     }
@@ -347,7 +351,8 @@ a {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 1136px;
+        /*height: 1136px;*/
+        height: 100vh;
     }
 
     .banner-content__sale {
@@ -442,7 +447,7 @@ a {
 }
 
 @media (max-width: 480px) {
-    .description__text p{
+    .description__text p {
         font-size: 20px;
     }
 
