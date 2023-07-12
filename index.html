@@ -40,7 +40,7 @@
         }
 
         .swiper-slide {
-            width: 75.5%;
+            width: 77.7%;
         }
 
     </style>
@@ -208,7 +208,17 @@
             <div class="banner">
                 <div class="banner-content">
                     <div class="banner-content__wrapper">
-                        <div class="banner-content__photo">
+                        <style scoped>
+                            .banner-content__photo.photo_brand_tnf {
+                                background-image: url("images/tnf.jpg");
+                            }
+                            @media (max-width: 640px) {
+                                .banner-content__photo.photo_brand_tnf {
+                                    background-image: url("images/tnf-mobile.jpg");
+                                }
+                            }
+                        </style>
+                        <div class="banner-content__photo photo_brand_tnf">
                             <div class="banner-content__sale">
                                 <p class="banner-content__sale-text">Sale</p>
                             </div>
@@ -217,8 +227,8 @@
                             <div class="description__wrapper">
                                 <div class="description__text">
                                     <h2>Arc'teryx</h2>
-                                    <p>Компания Arc'teryx была основана в Канаде как производитель высокотехнологичной экипировки и снаряжения для экстремальных условий обычно равно отказу
-                                        в оплате статьи или отправке на доработку. тут ровно 220 слов и точка.</p>
+                                    <p>Компания Arc'teryx была основана в Канаде как производитель высокотехнологичной экипировки и снаряжения для экстремальных
+                                        в оплате статьи или отправке на доработку</p>
                                 </div>
                                 <div class="description__logo">
                                     <img src="images/logo.png" alt="logo">
@@ -384,8 +394,8 @@
                 spaceBetween: 0,
             },
             1200: {
-                slidesPerView: "1",
-                spaceBetween: 0,
+                slidesPerView: "auto",
+                spaceBetween: 24,
             },
             // when window width is >= 640px
             1400: {
