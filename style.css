@@ -355,6 +355,12 @@ a {
         height: 100vh;
     }
 
+    .description__link {
+        position: absolute;
+        bottom: 20%;
+        right: 20px;
+    }
+
     .banner-content__sale {
         position: absolute;
         background: rgba(255, 0, 0, 0.80);
@@ -423,15 +429,17 @@ a {
 
     .swiper-button-prev,
     .swiper-button-next {
-        top: 1045px;
+        position: absolute;
+        top: 91%;
+        z-index: 10000;
     }
 
     .swiper-button-prev {
-        left: 25px;
+        left: 20px;
     }
 
     .swiper-button-next {
-        left: 90px;
+        left: 100px;
     }
 
     .swiper-button-prev,
