@@ -245,11 +245,6 @@ a {
 }
 
 @media (max-width: 1400px) {
-    .banner-content__description {
-        padding: 0 40px 0 40px;
-
-    }
-
     .swiper-button-next {
         right: calc(100px + (225 - 365) * ((100vw - 490px) / (1920 - 300)));
     }
