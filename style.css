@@ -64,7 +64,8 @@ a {
 .banner-content__description {
     padding: 0 87px 0 117px;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.70)
+    background: rgba(255, 255, 255, 0.70);
+    width: 720px;
 }
 
 .description__wrapper {
@@ -74,6 +75,7 @@ a {
     max-width: 516px;
     border-bottom: 1px solid rgba(39, 39, 39, 0.40);
     margin: 28px 0 36px 0;
+
 }
 
 .description__text {
@@ -245,8 +247,8 @@ a {
 @media (max-width: 1400px) {
     .banner-content__description {
         padding: 0 40px 0 40px;
-    }
 
+    }
 
     .swiper-button-next {
         right: calc(100px + (225 - 365) * ((100vw - 490px) / (1920 - 300)));
@@ -332,6 +334,10 @@ a {
 @media (max-width: 768px) {
     .description__wrapper {
         height: 285px;
+    }
+
+    .banner-content__description {
+        width: 100%;
     }
 
     .swiper-button-next {
