@@ -374,41 +374,42 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
             },
-            loop: true,
-            breakpoints: {
-
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-
-                480: {
-                    slidesPerView: "1",
-                    spaceBetween: 0,
-                },
-                640: {
-                    slidesPerView: "1",
-                    spaceBetween: 0,
-                },
-                1200: {
-                    slidesPerView: "1",
-                    spaceBetween: 0,
-                },
-
-                1400: {
-                    slidesPerView: "auto",
-                    spaceBetween: 24,
-                },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: "1",
+                spaceBetween: 0,
+            },
+            640: {
+                slidesPerView: "1",
+                spaceBetween: 0,
+            },
+            1200: {
+                slidesPerView: "1",
+                spaceBetween: 0,
+            },
+            // when window width is >= 640px
+            1400: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+            },
+            // when window width is >= 640px
 
             },
 

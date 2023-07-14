@@ -214,11 +214,11 @@ a {
 }
 
 .swiper-button-prev {
-    left: calc(100px + (225 - 50) * ((100vw - 490px) / (1920 - 300)));
+    left: calc(100px + (206 - 50) * ((100vw - 490px) / (1920 - 300)));
 }
 
 .swiper-button-next {
-    right: calc(100px + (225 - 50) * ((100vw - 490px) / (1920 - 300)));
+    right: calc(100px + (206 - 50) * ((100vw - 490px) / (1920 - 300)));
 }
 
 .swiper-button-next,
@@ -259,6 +259,14 @@ a {
 
     .description__wrapper {
         margin-left: 0;
+    }
+
+    .swiper-button-next {
+        right: calc(100px + (41 - 200) * ((100vw - 490px) / (1920 - 300)));;
+    }
+
+    .swiper-button-prev {
+        left: calc(100px + (41 - 200) * ((100vw - 490px) / (1920 - 300)));;
     }
 
     .banner-content__sale {
@@ -340,10 +348,6 @@ a {
 }
 
 @media (max-width: 640px) {
-    .test {
-        display: flex;
-        flex-direction: column;
-    }
 
     .swiper {
         height: 100vh;
