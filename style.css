@@ -245,6 +245,7 @@ a {
 @media (max-width: 1400px) {
     .banner-content__description {
         padding: 0 40px 0 40px;
+        width: 720px;
     }
 
 
