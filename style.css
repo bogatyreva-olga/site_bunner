@@ -40,7 +40,6 @@ a {
 }
 
 .banner-content__sale {
-    /*position: absolute;*/
     border-radius: 0 0 5px 5px;
     background: rgba(255, 0, 0, 0.80);
     width: 118px;
@@ -87,7 +86,7 @@ a {
     font-weight: 900;
     line-height: normal;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .description__text p {
@@ -434,7 +433,7 @@ a {
     .swiper-button-next {
         position: absolute;
         top: 94%;
-        z-index: 10000;
+        z-index: 100;
     }
 
     .swiper-button-prev {
@@ -479,7 +478,6 @@ a {
     .banner-content__sale-text {
         margin-right: 20px;
     }
-
 }
 
 
