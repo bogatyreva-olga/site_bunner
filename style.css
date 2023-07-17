@@ -98,6 +98,10 @@ a {
 
 }
 
+.description__logo {
+    max-height: 40px;
+}
+
 .description__text {
     text-align: left;
 }
