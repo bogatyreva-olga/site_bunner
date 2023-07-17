@@ -348,6 +348,9 @@ a {
     .gallery__text {
         padding: 5px;
     }
+    .description__logo img {
+        max-height: 30px;
+    }
 }
 
 @media (max-width: 768px) {
