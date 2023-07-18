@@ -61,9 +61,10 @@ a {
 
 .banner-content__sale {
     border-radius: 0 0 5px 5px;
-    background: rgba(255, 0, 0, 0.80);
-    width: 118px;
-    height: 474px;
+    background: #FF0000;
+    opacity: 0.6;
+    width: 124px;
+    height: 401px;
     margin-left: 90px;
     display: flex;
 }
@@ -348,6 +349,7 @@ a {
     .gallery__text {
         padding: 5px;
     }
+
     .description__logo img {
         max-height: 30px;
     }
